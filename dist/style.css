@@ -89,6 +89,8 @@ nav {
 
 .menu {
     height: 100%;
+    text-align: left;
+    padding-left: 20px;
     padding-top: 20px;
     background-image: -webkit-gradient(linear, left top, right top, from(#dbf5f1), to(#97dde4));
     background-image: linear-gradient(to right, #dbf5f1, #97dde4); 
