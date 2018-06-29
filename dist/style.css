@@ -75,7 +75,7 @@ body {
 
 nav {
     height: 100%;
-    width: 280px;
+    width: 300px;
     background-color: #7c7c7c;
     left: 0;
     top: 0;
@@ -83,8 +83,8 @@ nav {
     position: fixed;
     overflow-y: auto;
     overflow-x: visible;
-    -webkit-transform: translate(-280px,0);
-    transform: translate(-280px,0);
+    -webkit-transform: translate(-300px,0);
+    transform: translate(-300px,0);
 }
 
 .menu {
