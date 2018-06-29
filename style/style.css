@@ -1,0 +1,162 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:300,500');
+@font-face {
+    font-family: 'museo300';
+    src: url('../fonts/Museo300-Regular/Museo300-Regular.eot');
+    src: url('../fonts/Museo300-Regular/Museo300-Regular.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/Museo300-Regular/Museo300-Regular.woff') format('woff'),
+         url('../fonts/Museo300-Regular/Museo300-Regular.ttf') format('truetype'),
+         url('../fonts/Museo300-Regular/Museo300-Regular.svg#museo300') format('svg'),
+         url('../fonts/Museo300-Regular/Museo300-Regular.otf') format('otf');
+}
+@font-face {
+    font-family: 'museo500';
+    src: url('../fonts/Museo500-Regular/Museo500-Regular.eot');
+    src: url('../fonts/Museo500-Regular/Museo500-Regular.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/Museo500-Regular/Museo500-Regular.woff') format('woff'),
+         url('../fonts/Museo500-Regular/Museo500-Regular.ttf') format('truetype'),
+         url('../fonts/Museo500-Regular/Museo500-Regular.svg#museo300') format('svg'),
+         url('../fonts/Museo500-Regular/Museo500-Regular.otf') format('otf');
+}
+@font-face {
+    font-family: 'museo100';
+    src: url('../fonts/Museo100/Museo_100.woff') format('woff'),
+         url('../fonts/Museo100/Museo_100.ttf') format('truetype'),
+         url('../fonts/Museo100/Museo_100.woff2') format('woff2');
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    border:0;
+}
+
+img {
+    max-width: 100%;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+html,
+body {
+    height: 100%;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body {
+    background-image: url(../assets/Desert.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 100%;
+    font-family: 'Montserrat', sans-serif;
+    color: #333;
+    text-align: center;
+}
+
+.overlay {
+    position: fixed;
+    z-index: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,0.4);
+}
+
+.is-navOpen{
+  overflow: hidden;
+}
+
+nav {
+    height: 100%;
+    width: 280px;
+    background-color: #7c7c7c;
+    left: 0;
+    top: 0;
+    z-index: 2000;
+    position: fixed;
+    overflow-y: auto;
+    overflow-x: visible;
+    transform: translate(-280px,0);
+}
+
+.menu {
+    height: 100%;
+    padding-top: 20px;
+    background-image: linear-gradient(to right, #dbf5f1, #97dde4); 
+}
+
+.menu a {
+    display: block;
+    text-decoration: none;
+    font-size: 22px;
+    padding: 10px;
+    color: #ffffff;
+    text-transform: uppercase;
+}
+
+#desktop {
+    background-image: linear-gradient(to right, #cfe5f1, #9dd4f1);
+    height: 75px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    position: relative;
+    z-index: 2;
+}
+
+#desktop a {
+    font-size: 24px;
+    padding: 23px;
+    color: #ffffff;
+    text-transform: uppercase;
+}
+
+#desktop a:hover {
+    background-color: #60c8ff;
+}
+
+main {
+    position: absolute;
+    left: 10px;
+}
+
+.logo {
+    height: 90%;
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+
+
+.ssm-overlay {
+	position: fixed;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	background-color: rgba(0,0,0,0.2);
+    display: none;
+    z-index: 1;
+}
+
+@media (max-width: 991px) {
+
+    #desktop a {
+        display: none;
+    }
+
+
+}
+
+@media (min-width: 992px) {
+    main {
+        display: none;
+    }
+}
+

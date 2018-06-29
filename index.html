@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title></title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="dist/style.css" rel="stylesheet">
+    </head>
+    <body>
+
+        <div class="overlay"></div>
+            
+        <div id="desktop" class=" desktop-menu-item">
+                <main>
+                    <img class="ssm-toggle-nav" title="open nav" src="assets/bars.png" alt="bars">
+                </main>
+            <a href="#">home</a>
+            <a href="#">kapcsolat</a>
+            <a href="#">rólunk</a>
+            <a href="#">referenciák</a>
+            <a href="#">árak</a>
+            <img class="logo" src="assets/fratz.png" alt="logo">
+        </div>
+
+        <nav class="nav">
+            <div class="menu">
+                <a href="#">home</a>
+                <a href="#">kapcsolat</a>
+                <a href="#">rólunk</a>
+                <a href="#">referenciák</a>
+                <a href="#">árak</a>
+            </div>
+        </nav>
+
+        <script src="script/jquery-3.2.1.min.js"></script>
+        <script src="script/jquery-1.8.2.js"></script>
+        <script src="script/touchSwipe.min.js"></script>
+        <script src="script/jquery.slideandswipe.js"></script>
+        <script src="script/jquery.slideandswipe.min.js"></script>
+        <script>
+            $(document).ready(function() {
+                $('.nav').slideAndSwipe();
+            });
+        </script>
+    </body>  
+</html>
