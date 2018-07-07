@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="hu">
     <head>
         <title>touch</title>
         <meta charset="UTF-8">
@@ -10,18 +10,24 @@
     <body>
 
         <div class="overlay"></div>
-            
-        <div id="desktop" class=" desktop-menu-item">
-                <main>
-                    <img class="ssm-toggle-nav" title="open nav" src="assets/bars.png" alt="bars">
-                </main>
-            <a href="#">home</a>
-            <a href="#">kapcsolat</a>
-            <a href="#">rólunk</a>
-            <a href="#">referenciák</a>
-            <a href="#">árak</a>
-            <img class="logo" src="assets/fratz.png" alt="logo">
-        </div>
+        <header>
+            <div id="desktop" class=" desktop-menu-item">
+                    <main>
+                        <img class="ssm-toggle-nav" title="open nav" src="assets/bars.png" alt="bars">
+                    </main>
+                <a href="#">home</a>
+                <a href="#">kapcsolat</a>
+                <a href="#">rólunk</a>
+                <a href="#">referenciák</a>
+                <a href="#">árak</a>
+                <img class="logo" src="assets/fratz.png" alt="logo">
+            </div>
+            <div class="header-arrow-down">
+                <div class="arrow-box">
+                    <img src="assets/down-arrow.png" alt="arrow_down">
+                </div>
+            </div>
+        </header>   
 
         <nav class="nav">
             <div class="menu">
@@ -33,11 +39,16 @@
             </div>
         </nav>
 
+        <div class="contain">
+           
+        </div>
+
         <script src="script/jquery-3.2.1.min.js"></script>
         <script src="script/jquery-1.8.2.js"></script>
         <script src="script/touchSwipe.min.js"></script>
         <script src="script/jquery.slideandswipe.js"></script>
         <script src="script/jquery.slideandswipe.min.js"></script>
+        <script src="script/main.js"></script>
         <script>
             $(document).ready(function() {
                 $('.nav').slideAndSwipe();

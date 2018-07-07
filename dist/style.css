@@ -34,6 +34,8 @@
     border:0;
 }
 
+
+
 img {
     max-width: 100%;
 }
@@ -47,16 +49,41 @@ html,
 body {
     height: 100%;
     font-family: 'Montserrat', sans-serif;
-}
-
-body {
-    background-image: url(../assets/Desert.jpg);
-    background-size: cover;
-    background-position: center;
-    height: 100%;
-    font-family: 'Montserrat', sans-serif;
     color: #333;
     text-align: center;
+}
+
+header {
+    background-image: url(../assets/bud.jpg);
+    background-size: cover;
+    background-position: center bottom;
+    height: 100%;
+    position: relative;
+}
+.contain {
+    height: 2000px; /*!!!!!!!!!!!!!!!!!!!!*/
+}
+
+
+.header-arrow-down {
+    position: absolute;
+    bottom: 100px;
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;    
+}
+
+.arrow-box {
+    width: 60px;
+    height: 60px;
+    padding: 5px;
+    background-color: rgba(256,256,256,0.2);
+    border-radius: 50%;
+    cursor: pointer;
 }
 
 .overlay {
@@ -66,7 +93,7 @@ body {
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: rgba(0,0,0,0.4);
+    background-color: rgba(0,0,0,0.2);
 }
 
 .is-navOpen{
@@ -76,7 +103,6 @@ body {
 nav {
     height: 100%;
     width: 310px;
-    background-color: #7c7c7c;
     left: 0;
     top: 0;
     z-index: 2000;
@@ -92,8 +118,8 @@ nav {
     text-align: left;
     padding-left: 20px;
     padding-top: 20px;
-    background-image: -webkit-gradient(linear, left top, right top, from(#dbf5f1), to(#97dde4));
-    background-image: linear-gradient(to right, #dbf5f1, #97dde4); 
+    background-image: -webkit-gradient(linear, left top, right top, from(#f8fafa), to(#c3f7fc));
+    background-image: linear-gradient(to right, #f8fafa, #c3f7fc); 
 }
 
 .menu a {
@@ -101,14 +127,15 @@ nav {
     text-decoration: none;
     font-size: 22px;
     padding: 10px;
-    color: #ffffff;
+    color: #797979;
     text-transform: uppercase;
 }
 
 #desktop {
-    background-image: -webkit-gradient(linear, left top, right top, from(#cfe5f1), to(#9dd4f1));
-    background-image: linear-gradient(to right, #cfe5f1, #9dd4f1);
+    background-image: -webkit-gradient(linear, left top, right top, from(#fafcfd), to(#d0eeff));
+    background-image: linear-gradient(to right, #fafcfd, #d0eeff);
     height: 75px;
+    width: 100%;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -118,19 +145,22 @@ nav {
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
-    position: relative;
+    position: fixed;
     z-index: 2;
+    top: -75px;
+    -webkit-transition: all 0.4s ease-in-out;
+    transition: all 0.4s ease-in-out;
 }
 
 #desktop a {
     font-size: 24px;
     padding: 23px;
-    color: #ffffff;
+    color: #181717;
     text-transform: uppercase;
 }
 
 #desktop a:hover {
-    background-color: #60c8ff;
+    background-color: #dffeff;
 }
 
 main {
@@ -156,6 +186,15 @@ main {
     display: none;
     z-index: 1;
 }
+
+
+/*effektek*/
+
+.menu-effect {
+    top: 0!important;
+}
+
+
 
 @media (max-width: 991px) {
 
