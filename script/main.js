@@ -39,6 +39,24 @@ $(document).ready(function(){
             behavior: "smooth"
         });
      });
+
+     $(document).on("scroll", function() {
+
+        if($(document).scrollTop()>600) {
+            $(".btntop").show(250);
+        }
+        else {
+            $(".btntop").hide(250);
+        }
+    });
+
+    $('.btntop').on("click", function() {
+
+            $('html,body').animate( {
+                scrollTop: 0
+            }, 700);
+        }
+    );
     
     
 

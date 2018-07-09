@@ -247,6 +247,19 @@ main {
     margin: 0;
 }
 
+.btntop {
+    width: 40px;
+    height: 40px;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    padding: 5px;
+    background-color: rgba(0,0,0,0.2);
+    cursor: pointer;
+    display: none;
+}
+
+
 @keyframes bounce {
     0% {
       transform:scale(0);
@@ -282,6 +295,11 @@ main {
 
     .col-about {
         width: 100%;
+    }
+
+    .arrow-box {
+        width: 40px;
+        height: 40px;
     }
 
 }
