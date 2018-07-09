@@ -59,10 +59,6 @@ header {
     height: 100%;
     position: relative;
 }
-.contain {
-    height: 2000px; /*!!!!!!!!!!!!!!!!!!!!*/
-}
-
 
 .header-arrow-down {
     position: absolute;
@@ -132,6 +128,9 @@ nav {
     justify-content: flex-end;
     align-items: center;
     position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
     z-index: 2;
     top: -75px;
     transition: all 0.4s ease-in-out;
@@ -172,12 +171,93 @@ main {
     z-index: 1;
 }
 
+/* container about */
+
+.container {
+    max-width: 1140px;
+    min-width: 980px;
+    margin: 0 auto;
+}
+
+.container {
+    margin-top: 40px;
+}
+
+.row {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0;
+}
+
+.col-about {
+    width: 49%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column;
+}
+
+.box-img {
+    width: 30%;
+    opacity: 0;
+}
+
+.box-text {
+    padding: 20px 5px;
+    line-height: 1.7;
+    font-size: 18px;
+    font-weight: 200;
+    min-height: 350px;
+    width: 100%;
+}
+
+.box-text h1 {
+    font-size: 24px;
+    font-weight: 200;
+    text-transform: uppercase;
+    padding: 30px 0;
+}
+
+.box-text-left {
+    margin-left: -300px;
+    opacity: 0;
+    transition: all 0.5s ease-in-out;
+}
+.box-text-right {
+    margin-right: -300px;
+    opacity: 0;
+    transition: all 0.5s ease-in-out;
+}
 
 /*effektek*/
 
 .menu-effect {
     top: 0!important;
 }
+.imgscale{
+    /*transform: scale(1);*/
+    opacity: 1;
+    animation: bounce 800ms ease;
+}
+
+.text-animation {
+    opacity: 1;
+    margin: 0;
+}
+
+@keyframes bounce {
+    0% {
+      transform:scale(0);
+    }
+    50% {
+      transform:scale(1.2);
+    }
+    100% {
+      transform:scale(1);
+    }
+  }
 
 
 
@@ -187,6 +267,23 @@ main {
         display: none;
     }
 
+
+}
+
+@media (max-width: 576px) {
+
+    .container {
+        min-width: 100%!important;
+        max-width: 100%!important;
+    }
+
+    .row {
+        flex-flow: column;
+    }
+
+    .col-about {
+        width: 100%;
+    }
 
 }
 

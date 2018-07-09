@@ -18,9 +18,21 @@ $(document).ready(function(){
             }   
         else {
             $("#desktop").removeClass("menu-effect");
-            }
+            }  
+            
+                $('.box-img').waypoint(function() {
+                    $(this).addClass('imgscale');
+                }, { offset: '50%'  
+            });
+
+            $('.box-text').waypoint(function() {
+                $(this).delay(300).addClass('text-animation');
+            }, { offset: '60%'  
+        });
+
 
     }); 
+      
     
     $(".header-arrow-down").on("click", function(){
         window.scrollTo({
