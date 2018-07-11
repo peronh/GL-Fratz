@@ -61,11 +61,54 @@ header {
     height: 100%;
     width: 100%;
     position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: start;
+    -ms-flex-align: start;
+    align-items: flex-start;
+}
+
+.header-logo {
+    width: 400px;
+    background-color: rgba(256, 256, 256, 0.4);
+    margin-top: 200px;
+    padding: 30px;
+    -webkit-transform: skewX(-20deg);
+    transform: skewX(-20deg);
+    -webkit-animation: headerImg 1600ms ease-out;
+    animation: headerImg 1600ms ease-out;
+}
+
+@-webkit-keyframes headerImg { 
+    0% { margin-top:-250px;}
+    20% { margin-top: 200px; }
+    40% { margin-top: 90px; }
+    60% { margin-top: 200px; }
+    80% { margin-top: 170px; }
+    100% { margin-top:200px; }
+  }
+
+@keyframes headerImg { 
+    0% { margin-top:-250px;}
+    20% { margin-top: 200px; }
+    40% { margin-top: 90px; }
+    60% { margin-top: 200px; }
+    80% { margin-top: 170px; }
+    100% { margin-top:200px; }
+  }
+
+.header-logo-img {
+    -webkit-transform: skewX(20deg);
+    transform: skewX(20deg);
 }
 
 .header-arrow-down {
     position: absolute;
-    bottom: 100px;
+    bottom: 30px;
     width: 100%;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -91,7 +134,6 @@ header {
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: rgba(0,0,0,0.2);
 }
 
 .is-navOpen{
@@ -115,9 +157,18 @@ nav {
     height: 100%;
     text-align: left;
     padding-left: 20px;
-    padding-top: 20px;
+    padding-top: 100px;
     background-image: -webkit-gradient(linear, left top, right top, from(#f8fafa), to(#c3f7fc));
     background-image: linear-gradient(to right, #f8fafa, #c3f7fc); 
+    position: relative;
+}
+
+.movement {
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    top: 20px;
+    right: 20px;
 }
 
 .menu a {
@@ -166,6 +217,7 @@ nav {
 main {
     position: absolute;
     left: 10px;
+    width: 50px;
 }
 
 .logo {
@@ -275,6 +327,18 @@ main {
     animation: bounce 800ms ease;
 }
 
+@-webkit-keyframes bounce { 
+    0% { -webkit-transform:scale(0); transform:scale(0); }
+    50% {-webkit-transform:scale(1.2);transform:scale(1.2); }
+    100% {-webkit-transform:scale(1);transform:scale(1); }
+    }
+
+@keyframes bounce { 
+    0% { -webkit-transform:scale(0); transform:scale(0); }
+    50% {-webkit-transform:scale(1.2);transform:scale(1.2); }
+    100% {-webkit-transform:scale(1);transform:scale(1); }
+    }
+
 .text-animation {
     opacity: 1;
     margin: 0;
@@ -284,7 +348,6 @@ main {
     width: 40px;
     height: 40px;
     position: fixed;
-    z-index: 100;
     bottom: 20px;
     right: 20px;
     padding: 5px;
@@ -293,47 +356,65 @@ main {
     display: none;
 }
 
+::-webkit-scrollbar {
+    width: 10px;
+}
 
-@-webkit-keyframes bounce {
-    0% {
-      -webkit-transform:scale(0);
-      transform:scale(0);
-    }
-    50% {
-      -webkit-transform:scale(1.2);
-      transform:scale(1.2);
-    }
-    100% {
-      -webkit-transform:scale(1);
-      transform:scale(1);
-    }
-  }
+::-webkit-scrollbar:hover {
+    width: 15px;
+}
 
+::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 1px 1px 5px grey;
+    box-shadow: inset 1px 1px 5px grey; 
+    border-radius: 5px;
+}
 
-@keyframes bounce {
-    0% {
-      -webkit-transform:scale(0);
-      transform:scale(0);
-    }
-    50% {
-      -webkit-transform:scale(1.2);
-      transform:scale(1.2);
-    }
-    100% {
-      -webkit-transform:scale(1);
-      transform:scale(1);
-    }
-  }
+::-webkit-scrollbar-thumb {
+    background: #13D0CA; 
+    border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: rgb(3, 139, 135); 
+}
 
 
 
 @media (max-width: 991px) {
-
     #desktop a {
         display: none;
     }
+    .header-logo {
+        width: 150px;
+        margin-top: 100px;
+        padding: 20px;
+    }
+    @-webkit-keyframes headerImg { 
+        0% { margin-top:-150px;}
+        20% { margin-top: 100px; }
+        40% { margin-top: 40px; }
+        60% { margin-top: 100px; }
+        80% { margin-top: 85px; }
+        100% { margin-top: 100px; }
+      }
+    @keyframes headerImg { 
+        0% { margin-top:-150px;}
+        20% { margin-top: 100px; }
+        40% { margin-top: 40px; }
+        60% { margin-top: 100px; }
+        80% { margin-top: 85px; }
+        100% { margin-top: 100px; }
+      }
+}
 
-
+@media (max-width: 767px) {
+    
+    .header-logo-img {
+        width: 80%;
+        margin: 0 auto;
+    }
+    
 }
 
 @media (max-width: 576px) {

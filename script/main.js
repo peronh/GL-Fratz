@@ -29,7 +29,7 @@ $(document).ready(function(){
 
     $('.box-text').waypoint(function() {
         $(this).delay(300).addClass('text-animation');
-    }, { offset: '60%'  
+    }, { offset: '65%'  
     });
       
     
