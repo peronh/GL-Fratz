@@ -1,15 +1,14 @@
 $(document).ready(function(){
-   
 
-    // header gomb effekt
+// header gomb effekt
 
     setInterval(function(){ 
         $(".arrow-box").fadeOut(1000).fadeIn(1000);
      }, 2000);
 
-    // scroll effektek
-
-    var h = window.innerHeight;  
+// scroll effektek
+     var h = $(window).height();
+    //var h = window.innerHeight;  
 
     $(window).on("scroll",function() {
 
@@ -18,9 +17,22 @@ $(document).ready(function(){
             }   
         else {
             $("#desktop").removeClass("menu-effect");
-            }  
+            }    
+        }); 
 
-    }); 
+    $(".header-arrow-down").on("click", function(){
+        window.scrollTo({
+            top: h - 75,
+            behavior: "smooth"
+            });
+        });
+
+    if( h < 380){
+        $('.header-logo').css({ "margin-top" : "50px",
+                                "animation" : "none" });
+    }
+
+// waypoint function == animation
 
     $('.box-img').waypoint(function() {
         $(this).addClass('imgscale');
@@ -31,14 +43,8 @@ $(document).ready(function(){
         $(this).delay(300).addClass('text-animation');
     }, { offset: '65%'  
     });
-      
-    
-    $(".header-arrow-down").on("click", function(){
-        window.scrollTo({
-            top: h - 75,
-            behavior: "smooth"
-        });
-     });
+
+// back to top animation
 
      $(document).on("scroll", function() {
 
@@ -57,11 +63,5 @@ $(document).ready(function(){
             }, 700);
         }
     );
-    
-    
-
-
-     
-
-    
+       
 });
