@@ -36,7 +36,7 @@ $(document).ready(function(){
 
     $('.box-img').waypoint(function() {
         $(this).addClass('imgscale');
-    }, { offset: '50%'  
+    }, { offset: '55%'  
     });
 
     $('.box-text').waypoint(function() {
