@@ -13,7 +13,7 @@ $(document).ready(function(){
 // header logo scrolling fadeout
 
     var fadeStart=0,
-        fadeEnd=250, 
+        fadeEnd=200, 
         fading = $('.header-logo, .row-typeit');
 
     $(window).on('scroll', function(){
@@ -49,10 +49,10 @@ $(document).ready(function(){
             });
         });
 
-    if( h < 380){
-        $('.header-logo').css({ "margin-top" : "50px",
-                                "animation" : "none" });
+    if( h < 420){
+        $('.header-logo').css({ "animation" : "none" });
     }
+    else {}
 
 
 // waypoint function animation
