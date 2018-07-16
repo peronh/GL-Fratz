@@ -13,7 +13,7 @@ $(document).ready(function(){
 // header logo scrolling fadeout
 
     var fadeStart=0,
-        fadeEnd=200, 
+        fadeEnd=180, 
         fading = $('.header-logo, .row-typeit');
 
     $(window).on('scroll', function(){
