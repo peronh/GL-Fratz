@@ -33,8 +33,6 @@
     border:0;
 }
 
-
-
 img {
     max-width: 100%;
 }
@@ -57,7 +55,8 @@ header {
     background-image: url(../assets/bud.jpg);
     background-size: cover;
     background-position: center bottom;
-    height: 100%;
+    background-repeat: no-repeat;
+    height:100%;  
     width: 100%;
     position: relative;
     display: flex;
@@ -96,8 +95,8 @@ header {
 }
 
 .arrow-box {
-    width: 60px;
-    height: 60px;
+    width: 40px;
+    height: 40px;
     padding: 5px;
     background-color: rgba(256,256,256,0.2);
     border-radius: 50%;
@@ -158,7 +157,6 @@ nav {
 #desktop {
     background-image: linear-gradient(to right, #fafcfd, #d0eeff);
     height: 75px;
-    /*width: 100%;*/
     display: flex;
     justify-content: flex-end;
     align-items: center;
@@ -303,7 +301,7 @@ main {
     width: 10px;
 }
 
-::-webkit-scrollbar:hover {
+.hover {
     width: 15px;
 }
 
@@ -318,9 +316,39 @@ main {
 }
 
 ::-webkit-scrollbar-thumb:hover {
-    background: rgb(3, 139, 135); 
+    background: #038b87; 
 }
 
+.row-typeit{
+    position: absolute;
+    bottom: 25%;
+    text-align: center;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-flow: column;
+    /*height: 100%;*/
+}
+
+.row-typeit p {
+    max-width: calc(100vw - 20px);
+}
+
+.example2 {
+    color: #ffffff;
+    text-transform: uppercase;
+    font-size: 42px;
+    font-weight: 600;
+    padding-bottom: 20px;
+}
+.example4 {
+    color: #ffffff;
+    font-size: 36px;
+    font-weight: 400;
+    max-width: calc(100vw - 150px);
+}
 
 
 @media (max-width: 991px) {
@@ -328,9 +356,9 @@ main {
         display: none;
     }
     .header-logo {
-        width: 150px;
+        width: 250px;
         margin-top: 100px;
-        padding: 20px;
+        padding: 20px 40px;
     }
     @keyframes headerImg { 
         0% { margin-top:-150px;}
@@ -356,10 +384,6 @@ main {
         width: 70%;
     }
     
-    .header-logo-img {
-        width: 80%;
-        margin: 0 auto;
-    }
     .row {
         flex-flow: column;
     }
@@ -371,13 +395,17 @@ main {
     .box-img {
         width: 20%;
     }
-
-    .arrow-box {
-        width: 40px;
-        height: 40px;
-    }  
+ 
     .box-text {
         min-height: 300px;
+    }
+
+    .example2 {
+        font-size: 36px;
+    }
+
+    .example4 {
+        font-size: 24px;
     }
 }
 
@@ -385,6 +413,15 @@ main {
 
     .container {
         width: 100%;
+    }
+
+    .example2 {
+        font-size: 24px;
+        padding-bottom: 0;
+    }
+
+    .example4 {
+        font-size: 18px;
     }
 }
 

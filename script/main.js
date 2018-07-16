@@ -1,14 +1,36 @@
 $(document).ready(function(){
 
-// header gomb effekt
+// touchmenu 
+
+    $('.nav').slideAndSwipe();
+
+// header button 
 
     setInterval(function(){ 
         $(".arrow-box").fadeOut(1000).fadeIn(1000);
      }, 2000);
 
-// scroll effektek
+// header logo scrolling fadeout
+
+    var fadeStart=0,
+        fadeEnd=250, 
+        fading = $('.header-logo, .row-typeit');
+
+    $(window).on('scroll', function(){
+        var offset = $(document).scrollTop(),
+            opacity=0;
+
+        if( offset<=fadeStart ){
+            opacity=1;
+        }else if( offset<=fadeEnd ){
+            opacity=1-offset/fadeEnd;
+        }
+        fading.css('opacity',opacity);
+    });
+
+// scroll down animation
+
      var h = $(window).height();
-    //var h = window.innerHeight;  
 
     $(window).on("scroll",function() {
 
@@ -32,7 +54,8 @@ $(document).ready(function(){
                                 "animation" : "none" });
     }
 
-// waypoint function == animation
+
+// waypoint function animation
 
     $('.box-img').waypoint(function() {
         $(this).addClass('imgscale');
@@ -63,5 +86,24 @@ $(document).ready(function(){
             }, 700);
         }
     );
+
+// typeit 
+
+$('.example2').typeIt({
+    strings: 'gl fratz bt.',
+    typeSpeed: 100,
+    cursor: false,
+    startDelay: 250,});
+       
+  $('.example4').typeIt({
+    strings: 'Our SWENCY database has many activities designed to help <br> your students succeed and perfect their language skills. <br> You’ll see which questions are the most difficult and can <br> figure out what topics your students need to go over again.',
+    typeSpeed: 50,
+    cursor: true,
+    deleteSpeed: 20,
+    loop: true ,
+    loopDelay: 1750,
+    breakLines: false,
+    startDelay: 2750,
+    autoStart: true});
        
 });
