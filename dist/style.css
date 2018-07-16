@@ -381,7 +381,7 @@ main {
 
 .row-typeit{
     position: fixed;
-    bottom: 300px;
+    top: 500px;
     text-align: center;
     padding: 0;
     display: -webkit-box;
@@ -454,9 +454,9 @@ main {
         padding: 10px 0;
     }
 
-    /*.row-typeit {
-        bottom: 40%;
-    }*/
+    .row-typeit {
+        top: 400px;
+    }
 }
 
 @media (max-width: 767px) {
@@ -492,6 +492,10 @@ main {
         font-size: 24px;
     }
 
+    .row-typeit {
+        top: 300px;
+    }
+
 }
 
 @media (max-width: 576px) {
@@ -518,7 +522,7 @@ main {
     }
 
     .row-typeit {
-        bottom: 150px;
+        top: 240px;
     }
 }
 
@@ -547,7 +551,7 @@ main {
     }
 
     .row-typeit {
-        bottom: 80px;
+        top: 130px;
     }
 
 }
