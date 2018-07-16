@@ -123,7 +123,8 @@ nav {
     width: 310px;
     left: 0;
     top: 0;
-    z-index: 2000;
+    bottom: 0;
+    z-index: 2510;
     position: fixed;
     overflow-y: auto;
     overflow-x: visible;
