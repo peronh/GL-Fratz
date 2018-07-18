@@ -4,6 +4,25 @@ $(document).ready(function(){
 
     $('.nav').slideAndSwipe();
 
+// owl carousel
+
+    $('.owl-carousel').owlCarousel({
+        loop:true,
+        margin:10,
+        nav:true,
+        autoplay:true,
+        autoplayTimeout: 4000,
+        autoplayHoverPause:true,
+        smartSpeed: 1000,
+        responsive:{
+            0:{
+                items:1
+            }
+        }
+    });
+
+    $(".owl-carousel").owlCarousel();
+
 // header button 
 
     setInterval(function(){ 

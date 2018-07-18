@@ -144,11 +144,11 @@ header {
 nav {
     height: 100%;
     width: 310px;
+    position: fixed;
     left: 0;
     top: 0;
     bottom: 0;
     z-index: 2510;
-    position: fixed;
     overflow-y: auto;
     overflow-x: visible;
     -webkit-transform: translate(-310px,0);
@@ -247,7 +247,7 @@ main {
     overflow: hidden;
 }
 
-.container {
+.container-about {
     margin-top: 40px;
 }
 
@@ -322,7 +322,6 @@ main {
     top: 0!important;
 }
 .imgscale{
-    /*transform: scale(1);*/
     opacity: 1;
     -webkit-animation: bounce 800ms ease;
     animation: bounce 800ms ease;
@@ -358,7 +357,7 @@ main {
 }
 
 ::-webkit-scrollbar {
-    width: 10px;
+    width: 12px;
 }
 
 .hover {
@@ -368,12 +367,12 @@ main {
 ::-webkit-scrollbar-track {
     -webkit-box-shadow: inset 1px 1px 5px grey;
     box-shadow: inset 1px 1px 5px grey; 
-    border-radius: 5px;
+    border-radius: 6px;
 }
 
 ::-webkit-scrollbar-thumb {
     background: #13D0CA; 
-    border-radius: 5px;
+    border-radius: 6px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
@@ -420,6 +419,63 @@ main {
     max-width: calc(100vw - 150px);
 }
 
+/* parallar / slider */
+
+.jarallax {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+.item {
+    height: 500px;  
+    display: -webkit-box;  
+    display: -ms-flexbox;  
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+.item-box p {
+    color: #ffffff;
+    text-align: center;
+    font-size: 42px;
+    font-weight: 600;
+}
+
+.owl-prev, .owl-next {
+    position: absolute;
+    bottom: 20px;
+    cursor: pointer;
+    color: transparent;
+    width: 22px;
+    height: 40px;
+}
+
+.owl-prev {
+	left: 40%;
+    background-image:  url(../assets/icon-left.png);
+}
+
+.owl-next {
+	right: 40%;
+    background-image:  url(../assets/icon-right.png);
+}
+
+
+
+/*!!!!!!!!!!!!!!!!!!!!*/
+.cont {
+    height:  700px;
+}
+
 
 @media (max-width: 991px) {
     #desktop a {
@@ -457,6 +513,10 @@ main {
 
     .row-typeit {
         top: 400px;
+    }
+
+    .item-box p {
+        font-size: 36px;
     }
 }
 
@@ -497,6 +557,14 @@ main {
         top: 300px;
     }
 
+    .container-slider {
+        width: 96%;
+    }
+
+    .item-box p {
+        font-size: 32px;
+    }
+
 }
 
 @media (max-width: 576px) {
@@ -514,6 +582,14 @@ main {
         font-size: 18px;
     }
 
+    .jarallax, .item {
+        height: 350px!important;
+    }
+
+    .item-box p {
+        font-size: 20px;
+    }
+
 }
 
 @media (max-width: 340px) {
@@ -524,6 +600,9 @@ main {
 
     .row-typeit {
         top: 240px;
+    }
+    .item-box p {
+        font-size: 16px;
     }
 }
 
