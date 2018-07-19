@@ -7,18 +7,14 @@ $(document).ready(function(){
 // owl carousel
 
     $('.owl-carousel').owlCarousel({
+        items:1,
         loop:true,
         margin:10,
         nav:true,
-        autoplay:true,
-        autoplayTimeout: 4000,
         autoplayHoverPause:true,
-        smartSpeed: 1000,
-        responsive:{
-            0:{
-                items:1
-            }
-        }
+        autoplay:true,
+        autoplayTimeout: 2000,
+        smartSpeed: 1000
     });
 
     $(".owl-carousel").owlCarousel();
