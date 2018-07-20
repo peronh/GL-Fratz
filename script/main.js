@@ -104,21 +104,32 @@ $(document).ready(function(){
 
 // typeit 
 
-$('.example2').typeIt({
-    strings: 'gl fratz bt.',
-    typeSpeed: 100,
-    cursor: false,
-    startDelay: 250,});
-       
-  $('.example4').typeIt({
-    strings: 'Our SWENCY database has many activities designed to help <br> your students succeed and perfect their language skills. <br> You’ll see which questions are the most difficult and can <br> figure out what topics your students need to go over again.',
-    typeSpeed: 50,
-    cursor: true,
-    deleteSpeed: 20,
-    loop: true ,
-    loopDelay: 1750,
-    breakLines: false,
-    startDelay: 2750,
-    autoStart: true});
+    $('.example2').typeIt({
+        strings: 'gl fratz bt.',
+        typeSpeed: 100,
+        cursor: false,
+        startDelay: 250,});
+        
+    $('.example4').typeIt({
+        strings: 'Our SWENCY database has many activities designed to help <br> your students succeed and perfect their language skills. <br> You’ll see which questions are the most difficult and can <br> figure out what topics your students need to go over again.',
+        typeSpeed: 50,
+        cursor: true,
+        deleteSpeed: 20,
+        loop: true ,
+        loopDelay: 1750,
+        breakLines: false,
+        startDelay: 2750,
+        autoStart: true});
+
+// picture animation 
+
+    $('.col-picture').hover( function() {
+        $(this).find("img").addClass('scale-picture');
+        $(this).find(".text-picture").addClass('bottom-picture');
+    },
+    function() {
+        $(this).find("img").removeClass('scale-picture');
+        $(this).find(".text-picture").removeClass('bottom-picture');
+    });
        
 });
