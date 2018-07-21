@@ -4,21 +4,6 @@ $(document).ready(function(){
 
     $('.nav').slideAndSwipe();
 
-// owl carousel
-
-    $('.owl-carousel').owlCarousel({
-        items:1,
-        loop:true,
-        margin:10,
-        nav:true,
-        autoplayHoverPause:true,
-        autoplay:true,
-        autoplayTimeout: 2000,
-        smartSpeed: 1000
-    });
-
-    $(".owl-carousel").owlCarousel();
-
 // header button 
 
     setInterval(function(){ 
@@ -69,7 +54,6 @@ $(document).ready(function(){
     }
     else {}
 
-
 // waypoint function animation
 
     $('.box-img').waypoint(function() {
@@ -81,6 +65,21 @@ $(document).ready(function(){
         $(this).delay(300).addClass('text-animation');
     }, { offset: '65%'  
     });
+
+// owl carousel
+
+    $('.owl-carousel').owlCarousel({
+        items:1,
+        loop:true,
+        margin:10,
+        nav:true,
+        autoplayHoverPause:true,
+        autoplay:true,
+        autoplayTimeout: 2000,
+        smartSpeed: 1000
+    });
+
+    $(".owl-carousel").owlCarousel();
 
 // back to top animation
 

@@ -235,7 +235,7 @@ main {
 }
 
 .box-img {
-    width: 30%;
+    width: 15%;
     opacity: 0;
 }
 
@@ -252,7 +252,7 @@ main {
     font-size: 24px;
     font-weight: 200;
     text-transform: uppercase;
-    padding: 30px 0;
+    padding: 20px 0;
 }
 
 .box-text-left {
@@ -438,6 +438,67 @@ main {
     bottom: 0;
 }
 
+.container-picture {
+    padding-top: 30px;
+}
+
+.container-picture .box-text, .container-contact .box-text {
+    min-height: 0;
+    padding: 0;
+}
+
+iframe {
+    width: 90%;
+    box-shadow: 2px 2px 20px #13D0CA;
+}
+
+form {
+    position: relative;
+}
+
+.card-body {
+    width: 90%;
+}
+
+.form-group {
+    height: 50px;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #13D0CA;
+}
+
+label {
+    position: absolute;
+    left: 0;
+}
+
+input, textarea {
+    width: 100%;
+    height: 49px;
+    position: absolute;
+    left: 0;
+    background-color: transparent;
+    padding-left: 80px;
+    font-size: 22px;
+    font-style: italic;
+    color: #13D0CA;
+}
+
+textarea, .message {
+    height: 200px;
+}
+
+.form-btn button {
+    height: 50px;
+    width: 50px;
+    background: transparent;
+    cursor: pointer;
+}
+
+.form-btn {
+    border: 0;
+}
+
+
 
 @media (max-width: 991px) {
     #desktop a {
@@ -521,7 +582,11 @@ main {
     }
 
     .col-picture {
-        width: 100%;
+        width: 80%;
+    }
+
+    iframe {
+        margin: 40px 0;
     }
 
 }
