@@ -580,6 +580,10 @@ select:-webkit-autofill:focus {
     .container {
         width: 70%;
     }
+
+    .container-contact {
+        padding-top: 20px;
+    }
     
     .row {
         flex-flow: column;
@@ -621,7 +625,7 @@ select:-webkit-autofill:focus {
         width: 80%;
     }
 
-    iframe {
+    .col-contact-map {
         margin: 40px 0;
     }
 
@@ -634,7 +638,7 @@ select:-webkit-autofill:focus {
     }
 
     .row {
-        padding: 0 5px;
+        padding: 0 15px;
     }
 
     .example2 {
