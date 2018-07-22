@@ -58,12 +58,12 @@ $(document).ready(function(){
 
     $('.box-img').waypoint(function() {
         $(this).addClass('imgscale');
-    }, { offset: '55%'  
+    }, { offset: '60%'  
     });
 
     $('.box-text').waypoint(function() {
         $(this).delay(300).addClass('text-animation');
-    }, { offset: '65%'  
+    }, { offset: '70%'  
     });
 
 // owl carousel
@@ -130,5 +130,28 @@ $(document).ready(function(){
         $(this).find("img").removeClass('scale-picture');
         $(this).find(".text-picture").removeClass('bottom-picture');
     });
-       
+
+// form check 
+
+    $('.form-group .btn').click(function(ev) {
+
+        var textName = $("#registerName").val();
+        var textEmail = $('#registerEmail').val();
+    
+        if(textName == '') {
+            ev.preventDefault();
+            $("#registerName").attr("placeholder" , "Kérem adja meg a nevét!");
+        }
+        else{}
+        if(textEmail == '') {
+            ev.preventDefault();
+            $("#registerEmail").attr("placeholder" , "Kérem adja meg e-mail címét!");
+        }
+        else{} 
+    });
+
+    $("form").submit(function(e){
+        alert("Köszönjük! Kollégánk hamarosan felveszi Önnel a kapcsolatot.");
+    });
+
 });

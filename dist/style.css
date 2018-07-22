@@ -304,13 +304,13 @@ main {
 }
 
 .box-text-left {
-    margin-left: -300px;
+    margin-left: -400px;
     opacity: 0;
     -webkit-transition: all 0.5s ease-in-out;
     transition: all 0.5s ease-in-out;
 }
 .box-text-right {
-    margin-right: -300px;
+    margin-right: -400px;
     opacity: 0;
     -webkit-transition: all 0.5s ease-in-out;
     transition: all 0.5s ease-in-out;
@@ -540,8 +540,8 @@ main {
 
 iframe {
     width: 90%;
-    -webkit-box-shadow: 2px 2px 20px #13D0CA;
-    box-shadow: 2px 2px 20px #13D0CA;
+    -webkit-box-shadow: 1px 0 6px #13D0CA;
+    box-shadow: 1px 0 6px #13D0CA;
 }
 
 form {
@@ -555,7 +555,18 @@ form {
 .form-group {
     height: 50px;
     margin-bottom: 20px;
+}
+
+input, textarea {
     border-bottom: 1px solid #13D0CA;
+}
+
+.form-group-valid {
+    border-bottom: 1px solid #13D0CA;
+}
+
+.form-group-invalid {
+    border-bottom :1px solid rgba(255, 0 , 0);
 }
 
 label {
@@ -590,7 +601,45 @@ textarea, .message {
     border: 0;
 }
 
+input,textarea:focus {
+    outline: 0;
+    background: transparent;
+}
 
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus
+textarea:-webkit-autofill,
+textarea:-webkit-autofill:hover
+textarea:-webkit-autofill:focus,
+select:-webkit-autofill,
+select:-webkit-autofill:hover,
+select:-webkit-autofill:focus {
+  -webkit-text-fill-color: #13D0CA;
+  -webkit-box-shadow: 0 0 0px 1000px rgba(19,208,202,0.2) inset!important ;
+  -webkit-transition: background-color 5000s ease-in-out 0s;
+  transition: background-color 5000s ease-in-out 0s;
+}
+
+.form-back {
+    -webkit-box-shadow: 0 0 0px 1000px rgb(243, 80, 51) inset!important ;
+}
+
+::-webkit-input-placeholder {
+    color: rgba(256, 0, 0, 0.4);
+}
+
+:-ms-input-placeholder {
+    color: rgba(256, 0, 0, 0.4);
+}
+
+::-ms-input-placeholder {
+    color: rgba(256, 0, 0, 0.4);
+}
+
+::placeholder {
+    color: rgba(256, 0, 0, 0.4);
+}
 
 @media (max-width: 991px) {
     #desktop a {
