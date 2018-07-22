@@ -658,6 +658,18 @@ select:-webkit-autofill:focus {
         font-size: 20px;
     }
 
+    input {
+        padding-left: 60px;
+    }
+
+    label, textarea, ::placeholder  {
+        font-size: 16px;
+        font-size: 16px;
+    }
+
+    .card-body {
+        width: 100%;
+    }
 }
 
 @media (max-width: 340px) {
