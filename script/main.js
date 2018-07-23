@@ -133,25 +133,58 @@ $(document).ready(function(){
 
 // form check 
 
+
     $('.form-group .btn').click(function(ev) {
 
-        var textName = $("#registerName").val();
-        var textEmail = $('#registerEmail').val();
-    
-        if(textName == '') {
+        textName = $("#registerName").val();
+        textEmail = $('#registerEmail').val();
+
+        if(textName == "" && textEmail == "") {
+            ev.preventDefault();
+            $("input").attr("placeholder" , "Kötelező mező*");
+            $("input").css("border-bottom" , "1px solid #f54444");
+        }
+
+        else if(textName == ""){
             ev.preventDefault();
             $("#registerName").attr("placeholder" , "Kérem adja meg a nevét!");
+            $("#registerName").css("border-bottom" , "1px solid #f54444");
         }
-        else{}
-        if(textEmail == '') {
+
+        else if(textEmail == ""){
             ev.preventDefault();
-            $("#registerEmail").attr("placeholder" , "Kérem adja meg e-mail címét!");
+            $("#registerEmail").attr("placeholder" , "Kérem adja meg e-mail címét"); 
+            $("#registerEmail").css("border-bottom" , "1px solid #f54444");
         }
-        else{} 
     });
 
     $("form").submit(function(e){
         alert("Köszönjük! Kollégánk hamarosan felveszi Önnel a kapcsolatot.");
+    });
+
+    $("#registerName").on("keyup" , function(ev) {
+
+        textName = $("#registerName").val();
+
+        if(textName.length < 4) {
+            $(this).css("border-bottom" , "1px solid #f54444"); 
+        }
+        else{
+            $(this).css("border-bottom" , "1px solid #13D0CA"); 
+        }    
+    });
+
+    $("#registerEmail").on("keyup" , function(ev) {
+
+        textEmail = $("#registerEmail").val();
+
+        if(textEmail.length < 4) {
+            $(this).css("border-bottom" , "1px solid #f54444"); 
+        }
+        else{
+            $(this).css("border-bottom" , "1px solid #13D0CA"); 
+        }
+    
     });
 
 });

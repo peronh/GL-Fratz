@@ -466,15 +466,16 @@ form {
 }
 
 input, textarea {
-    border-bottom: 1px solid #13D0CA;
+    /*border-bottom: 1px solid #13D0CA;*/
+}
+input:invalid {
+    /*background-color: rgba(255, 0, 0, 0.1);*/
+    border-bottom :1px solid #f54444;
 }
 
-.form-group-valid {
+input:valid {
+ /* background-color: rgba(0, 250, 0, 0.1);*/
     border-bottom: 1px solid #13D0CA;
-}
-
-.form-group-invalid {
-    border-bottom :1px solid rgba(255, 0 , 0);
 }
 
 label {
@@ -524,16 +525,13 @@ select:-webkit-autofill,
 select:-webkit-autofill:hover,
 select:-webkit-autofill:focus {
   -webkit-text-fill-color: #13D0CA;
-  -webkit-box-shadow: 0 0 0px 1000px rgba(19,208,202,0.2) inset!important ;
+  -webkit-box-shadow: 0 0 0px 1000px rgba(19,208,202,0) inset!important ;
   transition: background-color 5000s ease-in-out 0s;
-}
-
-.form-back {
-    -webkit-box-shadow: 0 0 0px 1000px rgb(243, 80, 51) inset!important ;
 }
 
 ::placeholder {
     color: rgba(256, 0, 0, 0.4);
+    font-size:18px;
 }
 
 @media (max-width: 991px) {
