@@ -247,8 +247,16 @@ main {
     overflow: hidden;
 }
 
+.container-fluid-about {
+    background-image: url(../assets/wallpaper.png);
+    background-size: cover;
+    background-position: top left;
+    width: 100%;    
+}
+
 .container-about {
-    margin-top: 40px;
+    background-color: rgba(256, 256, 256, 0.6);
+    padding-top: 40px;
 }
 
 .row {
@@ -474,6 +482,13 @@ main {
 }
 
 /*   container ---- pictures  */
+
+.container-fluid-picture {
+    background-image: url(../assets/wallpaper-back.png);
+    background-size: cover;
+    background-position: bottom right;
+    width: 100%;
+}
 
 .row-picture {
     width: 100%;
