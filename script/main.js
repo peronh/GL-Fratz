@@ -153,7 +153,7 @@ $(document).ready(function(){
 
         else if(textEmail == ""){
             ev.preventDefault();
-            $("#registerEmail").attr("placeholder" , "Kérem adja meg e-mail címét"); 
+            $("#registerEmail").attr("placeholder" , "Kérem adja meg e-mail címét!");
             $("#registerEmail").css("border-bottom" , "1px solid #f54444");
         }
     });
@@ -162,7 +162,7 @@ $(document).ready(function(){
         alert("Köszönjük! Kollégánk hamarosan felveszi Önnel a kapcsolatot.");
     });
 
-    $("#registerName").on("keyup" , function(ev) {
+    $("#registerName").on("keyup" , function() {
 
         textName = $("#registerName").val();
 
@@ -174,11 +174,12 @@ $(document).ready(function(){
         }    
     });
 
-    $("#registerEmail").on("keyup" , function(ev) {
+    $("#registerEmail").on("keyup" , function() {
 
-        textEmail = $("#registerEmail").val();
+        var textEmail = $("#registerEmail").val(); 
+        var filterEmail = /^.+@.+\..{2,6}$/;
 
-        if(textEmail.length < 4) {
+        if(!filterEmail.test(textEmail)) {
             $(this).css("border-bottom" , "1px solid #f54444"); 
         }
         else{
