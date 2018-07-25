@@ -171,21 +171,35 @@ nav {
     transition: all 0.4s ease-in-out;
 }
 
+.desktop {
+    height: 50px!important;
+    opacity: 0.7;
+}
+
 #desktop a {
-    font-size: 24px;
-    padding: 23px;
+    font-size: 20px;
+    padding: 25.5px;
     color: #181717;
     text-transform: uppercase;
 }
 
+.desktopA {
+    padding: 13px 25px!important;
+}
+
 #desktop a:hover {
     background-color: #dffeff;
+
 }
 
 main {
     position: absolute;
     left: 10px;
-    width: 50px;
+    height: 70%;
+}
+
+main img {
+    height: 100%;
 }
 
 .logo {

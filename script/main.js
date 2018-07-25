@@ -91,6 +91,16 @@ $(document).ready(function(){
         else {
             $(".btntop").hide(250);
         }
+
+        if($(document).scrollTop()>1000) {
+            $('#desktop').addClass('desktop');
+            $('#desktop a').addClass('desktopA');
+        }
+        else {
+            $('#desktop').removeClass('desktop');
+            $('#desktop a').removeClass('desktopA');
+        }
+        
     });
 
     $('.btntop').on("click", function() {
@@ -187,5 +197,18 @@ $(document).ready(function(){
         }
     
     });
+
+    /*
+    $('.col-picture img').each(function(){ 
+
+      $('.col-picture img').eq(0).fadeIn(200);
+$('.col-picture img').eq(1).delay(100).fadeIn(100);
+$('.col-picture img').eq(2).delay(200).fadeIn(100);
+$('.col-picture img').eq(3).delay(300).fadeIn(100);
+$('.col-picture img').eq(4).delay(400).fadeIn(100);
+$('.col-picture img').eq(5).delay(500).fadeIn(100);
+
+     });
+     */
 
 });
