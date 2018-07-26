@@ -54,6 +54,18 @@ $(document).ready(function(){
     }
     else {}
 
+// manu to turn a page
+
+$('a[href^="#"]').on('click', function(event) {
+    var target = $(this.getAttribute('href'));
+    if( target.length ) {
+        event.preventDefault();
+        $('html, body').stop().animate({
+            scrollTop: target.offset().top
+        }, 800);
+    }
+});
+
 // waypoint function animation
 
     $('.box-img').waypoint(function() {

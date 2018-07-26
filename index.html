@@ -9,16 +9,16 @@
         <link href="dist/style.css" rel="stylesheet">
     </head>
     <body>   
-        <header>
+        <header id="home">
             <div id="desktop" class=" desktop-menu-item">
                     <main>
                         <img class="ssm-toggle-nav" title="open nav" src="assets/bars.png" alt="bars">
                     </main>
-                <a href="#">home</a>   
-                <a href="#">kapcsolat</a>  
-                <a href="#">rólunk</a> 
-                <a href="#">referenciák</a>    
-                <a href="#">árak</a>   
+                <a href="#home">home</a>   
+                <a href="#about">about</a>  
+                <a href="#cities">cities</a> 
+                <a href="#reference">reference</a>    
+                <a href="#contact">contact</a>   
                 <img class="logo" src="assets/fratz.png" alt="logo">
             </div>
             <div class="header-arrow-down">
@@ -45,15 +45,15 @@
                 <div class="movement">
                     <img src="assets/tactile.png" alt="tactile-left-movement">
                 </div>
-                <a href="#">home</a>
-                <a href="#">kapcsolat</a>
-                <a href="#">rólunk</a>
-                <a href="#">referenciák</a>
-                <a href="#">árak</a>
+                <a href="#home" class="ssm-toggle-nav" title="open nav">home</a>   
+                <a href="#about" class="ssm-toggle-nav" title="open nav">about</a>  
+                <a href="#cities" class="ssm-toggle-nav" title="open nav">cities</a> 
+                <a href="#reference" class="ssm-toggle-nav" title="open nav">reference</a>    
+                <a href="#contact" class="ssm-toggle-nav" title="open nav">contact</a>   
             </div>
         </nav>
         <div class="container-fluid-about">
-            <div class="container container-about">
+            <div id=reference class="container container-about">
                 <div class="row row-about">
                     <div class="col col-about">
                         <div class="box-img">
@@ -97,7 +97,7 @@
             </div>
         </div>
 
-        <div id="item-6" class="view jarallax" data-jarallax='{"speed": 0.2}' style="background-image: url(assets/bud2.jpg); height: 500px; ">
+        <div id="about" class="view jarallax" data-jarallax='{"speed": 0.2}' style="background-image: url(assets/bud2.jpg); height: 500px; ">
             <div class="container container-slider">
                 <div class="slider">
                     <div class="owl-carousel owl-theme">
@@ -128,7 +128,7 @@
         </div>
 
         <div class="container-fluid-picture">
-            <div class="container container-picture">
+            <div id="cities" class="container container-picture">
                 <div class="row">
                     <div class="col col-about">
                         <div class="box-img">
@@ -168,7 +168,7 @@
             </div>
         </div>
 
-        <div class="container container-contact">
+        <div id="contact" class="container container-contact">
             <div class="row row-contact-text">
                 <div class="col col-about">
                     <div class="box-img">

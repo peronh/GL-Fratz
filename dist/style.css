@@ -207,6 +207,8 @@ nav {
 .desktop {
     height: 50px!important;
     opacity: 0.7;
+    -webkit-transition: all 0.4s ease-in-out;
+    transition: all 0.4s ease-in-out;
 }
 
 #desktop a {
@@ -214,14 +216,20 @@ nav {
     padding: 25.5px;
     color: #181717;
     text-transform: uppercase;
+    -webkit-transition: all 0.4s ease-in-out;
+    transition: all 0.4s ease-in-out;
 }
 
 .desktopA {
     padding: 13px 25px!important;
+    -webkit-transition: all 0.4s ease-in-out;
+    transition: all 0.4s ease-in-out;
 }
 
 #desktop a:hover {
     background-color: #dffeff;
+    -webkit-transition: all 0.4s ease-in-out;
+    transition: all 0.4s ease-in-out;
 
 }
 
@@ -595,12 +603,10 @@ textarea {
     border-bottom: 1px solid #13D0CA;
 }
 input:invalid {
-    /*background-color: rgba(255, 0, 0, 0.1);*/
     border-bottom :1px solid #f54444;
 }
 
 input:valid {
- /* background-color: rgba(0, 250, 0, 0.1);*/
     border-bottom: 1px solid #13D0CA;
 }
 
