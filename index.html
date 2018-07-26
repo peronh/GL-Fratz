@@ -11,14 +11,16 @@
     <body>   
         <header id="home">
             <div id="desktop" class=" desktop-menu-item">
-                    <main>
-                        <img class="ssm-toggle-nav" title="open nav" src="assets/bars.png" alt="bars">
-                    </main>
-                <a href="#home">home</a>   
-                <a href="#about">about</a>  
-                <a href="#cities">cities</a> 
-                <a href="#reference">reference</a>    
-                <a href="#contact">contact</a>   
+                <main>
+                    <img class="ssm-toggle-nav" title="open nav" src="assets/bars.png" alt="bars">
+                </main>
+                <div class="desktop-menu">
+                    <a href="#home">home</a>   
+                    <a href="#about">about</a>  
+                    <a href="#cities">cities</a> 
+                    <a href="#reference">reference</a>    
+                    <a href="#contact">contact</a> 
+                </div>  
                 <img class="logo" src="assets/fratz.png" alt="logo">
             </div>
             <div class="header-arrow-down">
@@ -168,46 +170,48 @@
             </div>
         </div>
 
-        <div id="contact" class="container container-contact">
-            <div class="row row-contact-text">
-                <div class="col col-about">
-                    <div class="box-img">
-                        <img src="assets/contact.png" alt="city">
+        <div class="container-fluid-contact">
+            <div id="contact" class="container container-contact">
+                <div class="row row-contact-text">
+                    <div class="col col-about">
+                        <div class="box-img">
+                            <img src="assets/contact.png" alt="city">
+                        </div>
+                        <div class="box-text box-text-left">
+                            <h1>Contact</h1>
+                        </div>
                     </div>
-                    <div class="box-text box-text-left">
-                        <h1>Contact</h1>
+                </div>
+                <div class="row row-contact">
+                    <div class="col col-about col-contact col-contact-map">
+                        <iframe class=" box-text box-text-left" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2695.0373935893053!2d19.19007431562707!3d47.50866297917832!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4741c48e243bb3c5%3A0xe904f4126810dc7!2sBudapest%2C+Vill%C5%91+u.+2%2C+1165!5e0!3m2!1shu!2shu!4v1532207791485" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+                    </div>
+                    <div class="col col-about col-contact">
+                        <div class="card-body box-text box-text-right">
+                            <form>
+                                <div class="form-group form-group-name">
+                                    <label for="registerName">Név:</label>
+                                    <input name="registerName" type="text" id="registerName" minlength="4" >
+                                </div>
+                                <div class="form-group form-group-email">
+                                    <label for="registerEmail">E-mail:</label>
+                                    <input name="registerEmail" type="email" id="registerEmail" pattern="[0-9a-z\.-]+@([0-9a-z-]+\.)+[a-z]{2,4}" >
+                                </div>
+                                <div class="form-group message">
+                                    <label for="massege">Üzenet:</label>
+                                    <textarea name="massege" type="text" id="massege"></textarea>
+                                </div>
+                                <div class="form-group form-btn">
+                                    <button type="submit" value="assets/send.png" class="btn">
+                                        <img src="assets/send.png" alt="send">
+                                    </button>
+                                </div>
+                            </form>
+                        </div>
                     </div>
                 </div>
             </div>
-            <div class="row row-contact">
-                <div class="col col-about col-contact col-contact-map">
-                    <iframe class=" box-text box-text-left" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2695.0373935893053!2d19.19007431562707!3d47.50866297917832!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4741c48e243bb3c5%3A0xe904f4126810dc7!2sBudapest%2C+Vill%C5%91+u.+2%2C+1165!5e0!3m2!1shu!2shu!4v1532207791485" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
-                </div>
-                <div class="col col-about col-contact">
-                    <div class="card-body box-text box-text-right">
-                        <form>
-                            <div class="form-group form-group-name">
-                                <label for="registerName">Név:</label>
-                                <input name="registerName" type="text" id="registerName" minlength="4" >
-                            </div>
-                            <div class="form-group form-group-email">
-                                <label for="registerEmail">E-mail:</label>
-                                <input name="registerEmail" type="email" id="registerEmail" pattern="[0-9a-z\.-]+@([0-9a-z-]+\.)+[a-z]{2,4}" >
-                            </div>
-                            <div class="form-group message">
-                                <label for="massege">Üzenet:</label>
-                                <textarea name="massege" type="text" id="massege"></textarea>
-                            </div>
-                            <div class="form-group form-btn">
-                                <button type="submit" value="assets/send.png" class="btn">
-                                    <img src="assets/send.png" alt="send">
-                                </button>
-                            </div>
-                        </form>
-                    </div>
-                </div>
-            </div>
-        </div>
+        </div>    
 
         <div class="btn btntop"><img src="assets/up.png" alt="up"></div>
 
