@@ -505,6 +505,9 @@ form {
 
 .card-body {
     width: 90%;
+    background-color: rgba(256,256,256,0.6);
+    padding: 10px!important;
+    box-shadow: 0 0 30px #b5b5b5;
 }
 
 .form-group {

@@ -61,7 +61,7 @@ $('a[href^="#"]').on('click', function(event) {
     if( target.length ) {
         event.preventDefault();
         $('html, body').stop().animate({
-            scrollTop: target.offset().top
+            scrollTop: target.offset().top-50
         }, 800);
     }
 });
@@ -210,7 +210,7 @@ $('a[href^="#"]').on('click', function(event) {
     
     });
 
-    /*
+    
     $('.col-picture img').each(function(){ 
 
       $('.col-picture img').eq(0).fadeIn(200);
@@ -221,6 +221,6 @@ $('.col-picture img').eq(4).delay(400).fadeIn(100);
 $('.col-picture img').eq(5).delay(500).fadeIn(100);
 
      });
-     */
+     
 
 });
