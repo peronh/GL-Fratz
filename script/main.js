@@ -78,6 +78,11 @@ $('a[href^="#"]').on('click', function(event) {
     }, { offset: '70%'  
     });
 
+    $('.col-partners img').waypoint(function() {
+        $(this).addClass('col-partners-img-offset');
+    }, { offset: '70%'  
+    });
+
 // owl carousel
 
     $('.owl-carousel').owlCarousel({

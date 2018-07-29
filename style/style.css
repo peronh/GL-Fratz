@@ -39,6 +39,7 @@ img {
 
 a {
     text-decoration: none;
+    color: #969494;
 }
 
 
@@ -604,12 +605,19 @@ select:-webkit-autofill:focus {
     margin: 10px 0;
     cursor:pointer;
     transition: all 0.4s ease-in-out;
+    overflow: hidden;
 }
 
 .col-partners img {
     position: absolute;
-    top: 40px;
+    /*top: 40px;*/
+    top: 150px;
     left: 0;
+    transition: all 0.6s ease-in-out;
+}
+
+.col-partners-img-offset {
+    top:40px!important;
 }
 
 .active {
@@ -620,6 +628,51 @@ select:-webkit-autofill:focus {
 .inverse {
     opacity: 0;
     transition: all 0.4s ease-in-out;
+}
+
+footer {
+    background-image: url(../assets/wallpaper.png);
+}
+
+.row-footer {
+    justify-content: flex-start;
+    padding: 50px 20px!important;
+    align-items: flex-start;
+}
+
+.col-footer {
+    width: 42%;
+    text-align: left;
+    line-height: 2.1;
+    color: #969494;
+}
+
+.col-footer a {
+    display: block;
+}
+
+.col-footer a img {
+    width: 20px;
+    margin-right: 20px;
+}
+
+footer h3 {
+    margin: 20px 0;
+}
+
+.row-footer-text p img {
+    width: 20px;
+}
+
+.row-footer-text p {
+    padding: 40px 5px;
+}
+
+.line {
+    width: 70%;
+    height: 1px;
+    background-color: #969494;
+    margin: 0 auto;
 }
 
 @media (max-width: 991px) {
@@ -733,6 +786,10 @@ select:-webkit-autofill:focus {
     .col-partners {
     width: 30%;
     margin: 5px 0;
+    }
+
+    .col-footer {
+        width: 100%;
     }
 
 }
