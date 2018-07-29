@@ -489,14 +489,14 @@ main img {
 
 .container-fluid-contact {
     background-image: url(../assets/wallpaper-right.png);
-    /*background-size: cover;*/
     background-position: top right;
     width: 100%;
+    padding-bottom: 50px;
 }
 
 iframe {
     width: 90%;
-    box-shadow: 1px 0 6px #13D0CA;
+    box-shadow: 0 0 30px #b5b5b5;
 }
 
 form {
@@ -508,6 +508,10 @@ form {
     background-color: rgba(256,256,256,0.6);
     padding: 10px!important;
     box-shadow: 0 0 30px #b5b5b5;
+}
+
+.col-contact {
+    padding-bottom: 20px;
 }
 
 .form-group {
@@ -582,7 +586,50 @@ select:-webkit-autofill:focus {
     font-size:18px;
 }
 
+/* partners */
+
+
+
+.row-partners {
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.col-partners {
+    width: 22%;
+    height:150px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    margin: 10px 0;
+    cursor:pointer;
+    transition: all 0.4s ease-in-out;
+}
+
+.col-partners img {
+    position: absolute;
+    top: 40px;
+    left: 0;
+}
+
+.active {
+    opacity: 1;
+    transition: all 0.4s ease-in-out;
+}
+
+.inverse {
+    opacity: 0;
+    transition: all 0.4s ease-in-out;
+}
+
 @media (max-width: 991px) {
+
+    .container-partners {
+        width:80%;
+    }
+    .col-partners {
+        width:28%;
+    }
     #desktop a {
         display: none;
     }
@@ -675,6 +722,19 @@ select:-webkit-autofill:focus {
         margin: 40px 0;
     }
 
+    .container-partners {
+    width:90%;
+    }
+
+    .row-partners {
+        flex-flow: wrap;
+    }
+
+    .col-partners {
+    width: 30%;
+    margin: 5px 0;
+    }
+
 }
 
 @media (max-width: 576px) {
@@ -719,6 +779,12 @@ select:-webkit-autofill:focus {
 
     input:-webkit-autofill {
         font-size: 16px;
+    }
+
+    .col-partners {
+    width: 30%;
+    height: 100px;
+    margin: 5px 0;
     }
 }
 

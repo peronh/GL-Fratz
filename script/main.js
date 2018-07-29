@@ -210,6 +210,18 @@ $('a[href^="#"]').on('click', function(event) {
     
     });
 
+    // partners pictures hover 
+
+    $('.col-partners').hover( function() {
+        $(this).find(".active").css("opacity" , "0");
+        $(this).find(".inverse").css("opacity" , "1");
+    },
+    function() {
+        $(this).find(".inverse").css("opacity" , "0");
+        $(this).find(".active").css("opacity" , "1");
+    });
+
+/*
     
     $('.col-picture img').each(function(){ 
 
@@ -221,6 +233,6 @@ $('.col-picture img').eq(4).delay(400).fadeIn(100);
 $('.col-picture img').eq(5).delay(500).fadeIn(100);
 
      });
-     
+*/
 
 });
