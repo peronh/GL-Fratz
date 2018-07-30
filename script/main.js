@@ -4,6 +4,10 @@ $(document).ready(function(){
 
     $('.nav').slideAndSwipe();
 
+    var height = window.outerHeight;
+
+    $('nav').height(height).css("owerflow" , "auto");
+
 // header button 
 
     setInterval(function(){ 
