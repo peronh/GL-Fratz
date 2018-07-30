@@ -148,7 +148,8 @@ nav {
     position: fixed;
     left: 0;
     top: 0;
-    /*bottom: 0;*/
+    background-image: -webkit-gradient(linear, left top, right top, from(#f8fafa), to(#c3f7fc));
+    background-image: linear-gradient(to right, #f8fafa, #c3f7fc); 
     z-index: 2510;
     overflow-y: auto;
     overflow-x: visible;
@@ -161,8 +162,6 @@ nav {
     text-align: left;
     padding-left: 20px;
     padding-top: 100px;
-    background-image: -webkit-gradient(linear, left top, right top, from(#f8fafa), to(#c3f7fc));
-    background-image: linear-gradient(to right, #f8fafa, #c3f7fc); 
     position: relative;
 }
 
