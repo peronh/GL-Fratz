@@ -226,6 +226,16 @@ $('a[href^="#"]').on('click', function(event) {
         $(this).find(".active").css("opacity" , "1");
     });
 
+    // countries hover function
+
+    $('.map-text').hover(function() {
+            $(this).find('img').css("opacity" , "1");
+        },
+        function(){
+                $(this).find('img').css("opacity" , "0");
+            }
+    );
+
 /*
     
     $('.col-picture img').each(function(){ 

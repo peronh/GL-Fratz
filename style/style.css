@@ -242,9 +242,7 @@ main img {
 
 .container-fluid-about {
     background-image: url(../assets/wallpaper.png);
-    /*background-size: cover;*/
     background-position: top left;
-    /*width: 100%;    */
 }
 
 .container-about {
@@ -629,6 +627,49 @@ select:-webkit-autofill:focus {
     transition: all 0.4s ease-in-out;
 }
 
+/* countries */
+
+.container-map .box-text {
+    min-height: 50px;
+}
+
+.row-map {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+#map {
+    position: relative;
+    height: 488px;
+    width: 95%;
+}
+
+#map img {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.countries {
+    opacity: 0;
+}
+
+.map-text p {
+    position: relative;
+    width: 28%;
+    right: 0;
+    z-index: 3000;
+    cursor: pointer;
+    line-height: 1.5;
+    text-align: left;
+    margin-left: -30px;
+    color: #969494;
+}
+
+
+/* footer  */
+
 footer {
     background-image: url(../assets/wallpaper.png);
 }
@@ -891,12 +932,16 @@ footer h3 {
 @media (min-width: 992px) {
 
     .container {
-        max-width: 1140px;
+        max-width: 1170px;
         min-width: 980px;
     }
 
     main {
         display: none;
     }
+}
+
+tspan {
+    display: none;
 }
 
