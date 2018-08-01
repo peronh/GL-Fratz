@@ -50,6 +50,7 @@ body {
     font-family: 'Montserrat', sans-serif;
     color: #333;
     text-align: center;
+    background-color:  rgba(245, 241, 241, 0.2);
 }
 
 .page-load {
@@ -256,12 +257,12 @@ main img {
     margin: 0 auto;
     overflow: hidden;
 }
-
+/*
 .container-fluid-about {
     background-image: url(../assets/wallpaper.png);
     background-position: top left;
 }
-
+*/
 .container-about {
     padding-top: 40px;
 }
@@ -339,6 +340,7 @@ main img {
     width: 40px;
     height: 40px;
     position: fixed;
+    z-index: 4000;
     bottom: 20px;
     right: 20px;
     padding: 5px;
@@ -444,14 +446,12 @@ main img {
 }
 
 /*   container ---- pictures  */
-
+/*
 .container-fluid-picture {
     background-image: url(../assets/wallpaper-back.png);
-    /*background-size: cover;*/
     background-position: bottom right;
-    /*width: 100%;*/
 }
-
+*/
 .row-picture {
     width: 100%;
     display: flex;
@@ -503,8 +503,8 @@ main img {
 }
 
 .container-fluid-contact {
-    background-image: url(../assets/wallpaper-right.png);
-    background-position: top right;
+  /*  background-image: url(../assets/wallpaper-right.png);
+    background-position: top right;*/
     width: 100%;
     padding-bottom: 50px;
 }
@@ -603,8 +603,6 @@ select:-webkit-autofill:focus {
 
 /* partners */
 
-
-
 .row-partners {
     justify-content: space-around;
     flex-wrap: wrap;
@@ -690,11 +688,11 @@ select:-webkit-autofill:focus {
 
 
 /* footer  */
-
+/*
 footer {
     background-image: url(../assets/wallpaper.png);
 }
-
+*/
 .row-footer {
     justify-content: flex-start;
     padding: 50px 20px!important;
