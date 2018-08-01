@@ -22,7 +22,7 @@ $(window).load(function() {
 
     setTimeout(function(){
         $(".header-logo").show();
-     },1000);
+     },1500);
 
 
     var fadeStart=0,
