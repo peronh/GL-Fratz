@@ -101,6 +101,7 @@ header {
     background-color: rgba(256, 256, 256, 0.4);
     padding: 30px;
     -webkit-transform: skewX(-20deg);
+    -ms-transform: skewX(-20deg);
     transform: skewX(-20deg);
     -webkit-animation: headerImg 1600ms ease-out;
     animation: headerImg 1600ms ease-out;
@@ -126,6 +127,7 @@ header {
 
 .header-logo-img {
     -webkit-transform: skewX(20deg);
+    -ms-transform: skewX(20deg);
     transform: skewX(20deg);
 }
 
@@ -171,11 +173,13 @@ nav {
     left: 0;
     top: 0;
     background-image: -webkit-gradient(linear, left top, right top, from(#f8fafa), to(#c3f7fc));
+    background-image: -webkit-linear-gradient(left, #f8fafa, #c3f7fc);
     background-image: linear-gradient(to right, #f8fafa, #c3f7fc); 
     z-index: 2510;
     overflow-y: auto;
     overflow-x: visible;
     -webkit-transform: translate(-310px,0);
+    -ms-transform: translate(-310px,0);
     transform: translate(-310px,0);
 }
 
@@ -206,6 +210,7 @@ nav {
 
 #desktop {
     background-image: -webkit-gradient(linear, left top, right top, from(#fafcfd), to(#d0eeff));
+    background-image: -webkit-linear-gradient(left, #fafcfd, #d0eeff);
     background-image: linear-gradient(to right, #fafcfd, #d0eeff);
     height: 75px;
     display: -webkit-box;
@@ -459,6 +464,7 @@ main img {
 }
 
 .row-typeit p {
+    max-width: -webkit-calc(100vw - 10px);
     max-width: calc(100vw - 10px);
 }
 
@@ -473,6 +479,7 @@ main img {
     color: #ffffff;
     font-size: 36px;
     font-weight: 400;
+    max-width: -webkit-calc(100vw - 150px);
     max-width: calc(100vw - 150px);
 }
 
@@ -565,6 +572,7 @@ main img {
 
 .scale-picture {
     -webkit-transform: scale(1.25) rotate(10deg);
+    -ms-transform: scale(1.25) rotate(10deg);
     transform: scale(1.25) rotate(10deg);
     border: none;
 }
@@ -1004,6 +1012,7 @@ footer h3 {
     }
 
     .container-map {
+        width: -webkit-calc(100% - 20px);
         width: calc(100% - 20px);
     }
 
