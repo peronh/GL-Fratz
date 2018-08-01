@@ -53,6 +53,28 @@ body {
     text-align: center;
 }
 
+.page-load {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    z-index: 50000;
+    background-color: #ffffff;
+
+}
+
+.page-load-logo {
+    background-image: url(../assets/loading-animations.gif);
+}
+
 header {
     background-image: url(../assets/bud.jpg);
     background-size: cover;

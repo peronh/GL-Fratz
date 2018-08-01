@@ -1,5 +1,11 @@
 $(document).ready(function(){
 
+// page load functon
+
+$(window).load(function() {
+    $('.page-load').fadeOut(500);
+});
+
 // touchmenu 
 
     $('.nav').slideAndSwipe();
