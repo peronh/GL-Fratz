@@ -65,7 +65,8 @@ body {
 }
 
 .page-load-logo {
-    background-image: url(../assets/loading-animations.gif);
+    width: 200px;
+    height: 200px;
 }
 
 header {
