@@ -667,6 +667,10 @@ select:-webkit-autofill:focus {
     color: #969494;
 }
 
+.map-text p:hover {
+    color: #13D0CA;
+}
+
 
 /* footer  */
 
@@ -832,6 +836,22 @@ footer h3 {
         width: 100%;
     }
 
+    .container-map {
+        width: calc(100% - 20px);
+    }
+
+    #map {
+        height: 550px;
+        width: 100%;
+        column-count: 2!important;
+        padding: 290px 0 0 20px;
+    }
+
+    .map-text p {
+        margin-left: 0;
+        width: 100%;
+    }
+
 }
 
 @media (max-width: 576px) {
@@ -882,6 +902,20 @@ footer h3 {
     width: 30%;
     height: 100px;
     margin: 5px 0;
+    }
+
+    #map {
+        height: 460px;
+        padding: 200px 0 0 10px;
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 480px) {
+
+    #map {
+        height: 400px;
+        padding: 180px 0 0 10px;
     }
 }
 
