@@ -16,7 +16,14 @@ $(window).load(function() {
         $(".arrow-box").fadeOut(1000).fadeIn(1000);
      }, 2000);
 
-// header logo scrolling fadeout
+// header logo scrolling 
+
+    $(".header-logo").hide();
+
+    setTimeout(function(){
+        $(".header-logo").show();
+     },1000);
+
 
     var fadeStart=0,
         fadeEnd=180, 
@@ -226,10 +233,10 @@ $('a[href^="#"]').on('click', function(event) {
     $('.col-partners').hover( function() {
         $(this).find(".active").css("opacity" , "0");
         $(this).find(".inverse").css("opacity" , "1");
-    },
-    function() {
-        $(this).find(".inverse").css("opacity" , "0");
-        $(this).find(".active").css("opacity" , "1");
+        },
+        function() {
+            $(this).find(".inverse").css("opacity" , "0");
+            $(this).find(".active").css("opacity" , "1");
     });
 
     // countries hover function
@@ -238,8 +245,8 @@ $('a[href^="#"]').on('click', function(event) {
             $(this).find('img').css("opacity" , "1");
         },
         function(){
-                $(this).find('img').css("opacity" , "0");
-            }
+            $(this).find('img').css("opacity" , "0");
+        }
     );
 
 /*

@@ -349,6 +349,10 @@ main img {
     display: none;
 }
 
+.btntop img {
+    transform: scale(1.6);
+}
+
 ::-webkit-scrollbar {
     width: 12px;
 }

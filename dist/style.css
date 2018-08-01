@@ -421,6 +421,12 @@ main img {
     display: none;
 }
 
+.btntop img {
+    -webkit-transform: scale(1.6);
+    -ms-transform: scale(1.6);
+    transform: scale(1.6);
+}
+
 ::-webkit-scrollbar {
     width: 12px;
 }
