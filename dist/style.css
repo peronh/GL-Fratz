@@ -519,8 +519,9 @@ main img {
 .item-box p {
     color: #ffffff;
     text-align: center;
-    font-size: 42px;
+    font-size: 26px;
     font-weight: 600;
+    line-height: 1.8;
 }
 
 .owl-nav button {
